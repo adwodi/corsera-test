@@ -21,7 +21,7 @@
 						   MenuSearchService.getMatchedMenuItems(ctrl.searchTerm)
 						   .then(function(foundItems) {
 							   	 ctrl.found= foundItems;
-							   	 console.log(ctrl.found);
+							   	 
 			                   })
 			                  .catch(function(error){
 			                	  handelError(error);
