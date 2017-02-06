@@ -16,8 +16,11 @@
 		ctrl.searchTerm="chicken";
 		ctrl.found=[];
 		ctrl.findMenuItems=function(){
-						if(ctrl.searchTerm.trim()==="") //save bandwidth
-						 return;
+						if(ctrl.searchTerm.trim()===""){//save bandwidth
+							ctrl.found=[];
+							return;
+						} 
+						
 						   MenuSearchService.getMatchedMenuItems(ctrl.searchTerm)
 						   .then(function(foundItems) {
 							   	 ctrl.found= foundItems;
