@@ -1,0 +1,26 @@
+<table st-table="rowCollection" class="table table-striped">  
+
+	<thead>
+	<tr>
+		<th>short name</th>
+		<th>name</th>
+		<th>description</th>
+		<th>      </th>
+		
+	</tr>
+	</thead>
+	<tbody >
+	<tr ng-repeat="it in dirCtl.foundItems">
+		<td>{{it.short_name}}</td>
+		<td>{{it.name}}</td>
+		<td>{{it.description}}</td>
+		<td> <button class="btn btn-xs" ng-click="dirCtl.onRemove({index:$index})"> Don't want this one!</button></td>
+		
+	</tr>
+	</tbody>
+</table>
+
+<!-- <ol>
+	
+	<li ng-repeat="cat in dirCtl.foundItems"> {{cat.name}} </li>
+	</ol> -->
