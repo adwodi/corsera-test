@@ -30,7 +30,7 @@
     </div>
     <!-- found-items should be implemented as a component -->
     <found-items found-items="ctl.found" on-remove="ctl.removeItems(index)"></found-items>
-    <div class="emptyMessage" ng-if="ctl.found.length<=0"> Nothing found!  </div>
+    <div class="alert-warning" ng-if="ctl.found.length<=0"> Nothing found!  </div>
   </div>
 
 </body>
