@@ -7,7 +7,7 @@
 		   .directive('foundItems',foundItems);
 	function foundItems(){
 		var ddo={
-				templateUrl:'itemsTemplate.html',
+				templateUrl:'categoriesTemplate.html',
 				restrict: 'A',
 				transclude: true,
 				

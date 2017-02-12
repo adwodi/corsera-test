@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>coursera restaurnat menu :ass 04 sol</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <style>
+      .emptyMessage {
+        font-weight: bold;
+        color: red;
+        font-size: 1.2em;
+      }
+      </style>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/lib/angular.js"></script>
+      <script src="js/lib/angular-ui-router.min.js"></script>
+    <script src="js/menuapp.module.js"></script>
+    <script src="js/data.module.js"></script>
+      <script src="js/views/routes.js"></script>
+      <script src="js/services/menudata.service.js"></script>
+      <script src="js/components/categories.component.js"></script>
+      <script src="js/components/items.component.js"></script>
+    <script src="js/controllers/categoriesController.js"></script>
+    <script src="js/controllers/detailController.js"></script>
+
+
+  </head>
+<body ng-app="MenuApp">
+   <div class="container" >
+   <ui-view></ui-view>
+  </div>
+
+</body>
+</html>
